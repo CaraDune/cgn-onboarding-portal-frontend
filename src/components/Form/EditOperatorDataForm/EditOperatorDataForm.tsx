@@ -147,7 +147,7 @@ const EditOperatorDataForm = () => {
         const { hasDifferentFullName, ...discount } = values;
         void updateProfile({
           ...discount,
-          ...getSalesChannel(discount.salesChannel)
+          salesChannel: getSalesChannel(discount.salesChannel)
         });
       }}
     >
